@@ -8,7 +8,36 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Bhuvesh Kumar</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/home/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://bhuveshkumar.com/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://bhuveshkumar.com/home/about/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://bhuveshkumar.com/home/about/</guid>
+      <description>Biography I am a graduate student in the School of Computer Science at the College of Computing in Georgia Institute of Technology presently working with Prof. Jacob Abernethy. I am interested in Machine Learning Theory and Optimization and I am part of the CS Theory Group. I graduated from IIT Kanpur, India in 2017 with Bachelors of Technology degree in Computer Science and Engineering with a minor in Linguistic Theory where I was advised by Prof.</description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>http://bhuveshkumar.com/home/teaching/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://bhuveshkumar.com/home/teaching/</guid>
+      <description> IIT Kanpur  ESC101: Fundamentals of Computing (Spring 2017): Tutor with Prof. Rajat Mittal  Took weekly tutorials, set up the course exams, labs, and supervised the TAs Delivered lectures for the online version of the course as well  ESC101: Fundamentals of Computing (Fall 2016) Tutor with Prof. Vinay P. Namboodiri  Took weekly tutorials, set up the course exams, labs, and supervised the TAs   </description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://bhuveshkumar.com/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://bhuveshkumar.com/home/contact/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
