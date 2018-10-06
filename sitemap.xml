@@ -1,74 +1,70 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-  <url>
-    <loc>http://bhuveshkumar.com/home/about/</loc>
-    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
-  </url>
+    
+    
+    <url>
+    
+      <loc>http://bhuveshkumar.com/publication/</loc>
+      <lastmod>2017-01-01T00:00:00-05:00</lastmod>
+    </url>
+    
   
-  <url>
-    <loc>http://bhuveshkumar.com/home/publications/</loc>
-    <lastmod>2016-04-20T00:00:00-04:00</lastmod>
-  </url>
+    
+    
+    <url>
+    
+      <loc>http://bhuveshkumar.com/publication/dp-auctions/</loc>
+      <lastmod>2013-07-01T00:00:00-04:00</lastmod>
+    </url>
+    
   
-  <url>
-    <loc>http://bhuveshkumar.com/home/teaching/</loc>
-    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
-  </url>
+    
+    
+    <url>
+    
+      <loc>http://bhuveshkumar.com/publication_types/1/</loc>
+      <lastmod>2013-07-01T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
   
-  <url>
-    <loc>http://bhuveshkumar.com/home/activities/</loc>
-    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
-  </url>
+    
+    
+    <url>
+    
+      <loc>http://bhuveshkumar.com/</loc>
+      <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
   
-  <url>
-    <loc>http://bhuveshkumar.com/home/contact/</loc>
-    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
-  </url>
+    
+    
+    <url>
+    
+      <loc>http://bhuveshkumar.com/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
   
-  <url>
-    <loc>http://bhuveshkumar.com/publication/</loc>
-    <lastmod>2017-01-01T00:00:00-05:00</lastmod>
-  </url>
+    
+    
+    <url>
+    
+      <loc>http://bhuveshkumar.com/publication_types/</loc>
+      <lastmod>2013-07-01T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
   
-  <url>
-    <loc>http://bhuveshkumar.com/publication/dp-auctions/</loc>
-    <lastmod>2013-07-01T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://bhuveshkumar.com/publication_types/1/</loc>
-    <lastmod>2013-07-01T00:00:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://bhuveshkumar.com/</loc>
-    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://bhuveshkumar.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://bhuveshkumar.com/home/</loc>
-    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://bhuveshkumar.com/publication_types/</loc>
-    <lastmod>2013-07-01T00:00:00-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://bhuveshkumar.com/tags/</loc>
-    <priority>0</priority>
-  </url>
+    
+    
+    <url>
+    
+      <loc>http://bhuveshkumar.com/tags/</loc>
+      <priority>0</priority>
+    </url>
+    
   
 </urlset>
