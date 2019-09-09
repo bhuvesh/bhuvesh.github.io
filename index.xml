@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bhuvesh Kumar on Bhuvesh Kumar</title>
@@ -7,15 +6,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Bhuvesh Kumar</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Sep 2019 00:00:00 -0400</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Learning Auctions with Robust Incentive Guarantees</title>
-      <link>http://bhuveshkumar.com/publication/dp-auctions/</link>
-      <pubDate>Sun, 01 Sep 2019 00:00:00 -0400</pubDate>
+      <title>Publications</title>
+      <link>http://bhuveshkumar.com/publication/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
       
-      <guid>http://bhuveshkumar.com/publication/dp-auctions/</guid>
+      <guid>http://bhuveshkumar.com/publication/</guid>
       <description></description>
     </item>
     

@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Bhuvesh Kumar</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="http://bhuveshkumar.com/home/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,7 +18,7 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://bhuveshkumar.com/home/about/</guid>
-      <description>Biography I am a graduate student in the School of Computer Science at the College of Computing in Georgia Institute of Technology. I am being advised by Prof. Jacob Abernethy and Jamie Morgenstern. I am interested in Machine Learning Theory, Mechanism Design, and Differential Privacy. I graduated from IIT Kanpur, India in 2017 with Bachelors of Technology degree in Computer Science and Engineering with a minor in Linguistic Theory where I was advised by Prof.</description>
+      <description>Biography I am a graduate student in the School of Computer Science at the College of Computing in Georgia Institute of Technology. I am being advised by Prof. Jacob Abernethy and Prof. Jamie Morgenstern. I am interested in Machine Learning Theory, Mechanism Design, and Differential Privacy. I graduated from IIT Kanpur, India in 2017 with Bachelors of Technology degree in Computer Science and Engineering with a minor in Linguistic Theory where I was advised by Prof.</description>
     </item>
     
     <item>
