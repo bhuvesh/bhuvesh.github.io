@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Bhuvesh Kumar</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 01 Sep 2019 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="http://bhuveshkumar.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -58,9 +58,9 @@
     </item>
     
     <item>
-      <title>Privacy, Overfitting, and Truthfulness in Auctions</title>
+      <title>Learning Auctions with Robust Incentive Guarantees</title>
       <link>http://bhuveshkumar.com/publication/dp-auctions/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 -0400</pubDate>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 -0400</pubDate>
       
       <guid>http://bhuveshkumar.com/publication/dp-auctions/</guid>
       <description></description>
