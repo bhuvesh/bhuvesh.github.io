@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.49" />
+  <meta name="generator" content="Hugo 0.53" />
   <meta name="author" content="Bhuvesh Kumar">
   <meta name="description" content="bhuvesh@gatech.edu">
 
@@ -56,7 +56,7 @@
 
   
 
-  <title>Privacy, Overfitting, and Truthfulness in Auctions | Bhuvesh Kumar</title>
+  <title>Learning Auctions with Robust Incentive Guarantees | Bhuvesh Kumar</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -156,10 +156,10 @@
 
 
   <div class="container pub-title">
-    <h1 itemprop="name">Privacy, Overfitting, and Truthfulness in Auctions</h1>
+    <h1 itemprop="name">Learning Auctions with Robust Incentive Guarantees</h1>
     <span class="pub-authors" itemprop="author">
       
-      <b>Bhuvesh Kumar</b>, Jacob Abernethy, Rachel Cummings, Jamie Morgenstern, Samuel Taggart
+      Jacob Abernethy, Rachel Cummings, <b>Bhuvesh Kumar</b>, Jamie Morgenstern, Samuel Taggart
       
     </span>
     <span class="pull-right">
@@ -175,28 +175,28 @@
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Privacy%2c%20Overfitting%2c%20and%20Truthfulness%20in%20Auctions&amp;url=http%3a%2f%2fbhuveshkumar.com%2fpublication%2fdp-auctions%2f"
+         href="https://twitter.com/intent/tweet?text=Learning%20Auctions%20with%20Robust%20Incentive%20Guarantees&amp;url=http%3a%2f%2fbhuveshkumar.com%2fpublication%2fdp-auctions%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fbhuveshkumar.com%2fpublication%2fdp-auctions%2f&amp;title=Privacy%2c%20Overfitting%2c%20and%20Truthfulness%20in%20Auctions"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fbhuveshkumar.com%2fpublication%2fdp-auctions%2f&amp;title=Learning%20Auctions%20with%20Robust%20Incentive%20Guarantees"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fbhuveshkumar.com%2fpublication%2fdp-auctions%2f&amp;title=Privacy%2c%20Overfitting%2c%20and%20Truthfulness%20in%20Auctions"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fbhuveshkumar.com%2fpublication%2fdp-auctions%2f&amp;title=Learning%20Auctions%20with%20Robust%20Incentive%20Guarantees"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Privacy%2c%20Overfitting%2c%20and%20Truthfulness%20in%20Auctions&amp;body=http%3a%2f%2fbhuveshkumar.com%2fpublication%2fdp-auctions%2f">
+         href="mailto:?subject=Learning%20Auctions%20with%20Robust%20Incentive%20Guarantees&amp;body=http%3a%2f%2fbhuveshkumar.com%2fpublication%2fdp-auctions%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -213,7 +213,7 @@
   
 
   <h3>Abstract</h3>
-  <p class="pub-abstract" itemprop="text">This paper studies the problem of designing near-optimal repeated auctions with the goal of maximizing revenue for the seller. The classical approach to optimizing revenue requires a known prior distribution on the demand of the participants in the auction, but this can be replaced with a sequential learning strategy that estimates bidder demand from data. When buyers can participate in multiple rounds, however, they have an opportunity and incentive to strategically adjust their behavior, especially in earlier rounds, to achieve more favorable prices. Such non-truthful behavior is undesirable for many reasons, and in this work we propose a repeated auction framework that is approximately revenue optimal yet limits the bidders&rsquo; potential for manipulation. The fundamental tool we rely on is <em>differential privacy</em>, which helps to ensure weak dependencies in the mechanism from round to round.</p>
+  <p class="pub-abstract" itemprop="text">We study the problem of learning Bayesian-optimal revenue-maximizing auctions. The classical approach to maximizing revenue requires a known prior distribution on the demand of the bidders, although recent work has shown how to replace the knowledge of a prior distribution with a polynomial sample. However, in an online setting, when buyers can participate in multiple rounds, standard learning techniques are susceptible to strategic overfitting: bidders can improve their long-term wellbeing by manipulating the trajectory of the learning algorithm in earlier rounds. For example, they may be able to strategically adjust their behavior in earlier rounds to achieve lower, more favorable future prices. Such non-truthful behavior can hinder learning and harm revenue.  In this paper, we combine tools from differential privacy, mechanism design, and sample complexity to give a repeated auction that (1) learns bidder demand from past data, (2) is approximately revenue-optimal, and (3) strategically robust, as it incentivizes bidders to behave truthfully.</p>
 
   
   <div class="row">
@@ -240,7 +240,7 @@
     <div class="col-sm-10">
       <div class="row">
         <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-        <div class="col-xs-12 col-sm-9">In submission.</div>
+        <div class="col-xs-12 col-sm-9">NeuRIPS, 2019</div>
       </div>
     </div>
     <div class="col-sm-1"></div>
@@ -253,7 +253,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
         <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-          July, 2013
+          September, 2019
         </div>
       </div>
     </div>
