@@ -14,6 +14,15 @@
     
     <url>
     
+      <loc>http://bhuveshkumar.com/publication/active-online/</loc>
+      <lastmod>2020-02-14T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://bhuveshkumar.com/publication/dp-auctions/</loc>
       <lastmod>2019-09-01T00:00:00-04:00</lastmod>
     </url>
@@ -44,6 +53,16 @@
     
       <loc>http://bhuveshkumar.com/publication_types/1/</loc>
       <lastmod>2019-09-01T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://bhuveshkumar.com/publication_types/3/</loc>
+      <lastmod>2020-02-14T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     
