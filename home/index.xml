@@ -8,54 +8,7 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Bhuvesh Kumar</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://bhuveshkumar.com/home/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title></title>
-      <link>http://bhuveshkumar.com/home/about/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://bhuveshkumar.com/home/about/</guid>
-      <description>Biography I am a graduate student in the School of Computer Science at the College of Computing in Georgia Institute of Technology. I am being advised by Prof. Jacob Abernethy and Prof. Jamie Morgenstern. I am interested in Machine Learning Theory, Mechanism Design, and Differential Privacy. I graduated from IIT Kanpur, India in 2017 with Bachelors of Technology degree in Computer Science and Engineering with a minor in Linguistic Theory where I was advised by Prof.</description>
-    </item>
-    
-    <item>
-      <title>Recent Publications</title>
-      <link>http://bhuveshkumar.com/home/publications/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
-      
-      <guid>http://bhuveshkumar.com/home/publications/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Teaching</title>
-      <link>http://bhuveshkumar.com/home/teaching/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://bhuveshkumar.com/home/teaching/</guid>
-      <description>Georgia Tech  CS7545, Machine Learning Theory (Fall 2018, Fall 2019): TA with Prof. Jacob Abernethy  Design and grade homeworks and exams. Conduct office hours and deliver special lectures.   IIT Kanpur  ESC101, Fundamentals of Computing (Spring 2017): Tutor with Prof. Rajat Mittal  Took weekly tutorials, set up the course exams, labs, and supervised the TAs Delivered lectures for the online version of the course as well  ESC101, Fundamentals of Computing (Fall 2016): Tutor with Prof.</description>
-    </item>
-    
-    <item>
-      <title>Activities</title>
-      <link>http://bhuveshkumar.com/home/activities/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://bhuveshkumar.com/home/activities/</guid>
-      <description>Georgia Tech  I co-organise the Georgia Tech ACO student seminar. Reach out if you would like to give a talk. We have a reading group on machine learning theory. Contact Andre if you want to attend or present. I co-organise the College of Computing Grad Student Happy Hour. Join us on our facebook group or mailing list.  IIT Kanpur  Programming Club, IITK: I was the coordinator of the programming club of IIT Kanpur in 2015-16.</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>http://bhuveshkumar.com/home/contact/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://bhuveshkumar.com/home/contact/</guid>
-      <description></description>
-    </item>
+    <atom:link href="/home/" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>

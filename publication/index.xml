@@ -8,9 +8,16 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Bhuvesh Kumar</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
+    <atom:link href="/publication/" rel="self" type="application/rss+xml" />
     
-	<atom:link href="http://bhuveshkumar.com/publication/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>Learning Auctions with Robust Incentive Guarantees</title>
+      <link>http://bhuveshkumar.com/publication/attack-bandits/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 -0500</pubDate>
+      
+      <guid>http://bhuveshkumar.com/publication/attack-bandits/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Bridging Truthfulness and Corruption-robustness in Multi-Armed Bandit Mechanisms</title>
