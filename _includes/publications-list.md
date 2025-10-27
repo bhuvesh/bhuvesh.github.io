@@ -43,7 +43,7 @@
 
 * Bridging Truthfulness and Corruption-robustness in Multi-Armed Bandit Mechanisms <br>
   Y. Xu, B. Kumar, J. Abernethy, T. Lykouris <br>
-  **ICML 2020 (Incentives in ML Workshop)** <br>
+  **Incentives in ML Workshop at ICML 2020** <br>
   [[pdf]](/files/papers/bridging_truthful/bridging_truthful.pdf), [[talk]](https://youtu.be/-ynxeiOuqoE)
 
 * Learning Auctions with Robust Incentive Guarantees <br>
