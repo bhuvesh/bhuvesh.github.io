@@ -582,7 +582,7 @@ Run both Task 2 test files and `test/repository_cleanup_test.rb` again.
 Also run:
 
 ```bash
-git grep -n -E "Paper Title Number|Talk 1 on Relevant Topic|Short description of portfolio item|This is a description of a teaching experience"
+git grep -n -E "Paper Title Number|Talk 1 on Relevant Topic|Short description of portfolio item|This is a description of a teaching experience" -- . ':(exclude)docs/**' ':(exclude)test/**'
 ```
 
 Expected: both test files pass; `git grep` returns no matches.
