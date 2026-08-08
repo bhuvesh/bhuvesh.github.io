@@ -55,4 +55,30 @@ class RenderedSiteTest < Minitest::Test
     item = items.fetch(0)
     refute_match(/<a\b/, item)
   end
+
+  def test_authors_have_dedicated_typography_hook
+    expected_count = records.length
+
+    PAGES.each do |relative_path|
+      html = page(relative_path)
+      assert_equal expected_count, html.scan(/class="publication-authors"/).length, relative_path
+    end
+  end
+
+  def test_venue_less_preprints_do_not_render_empty_venue_markup
+    venue_less_titles = records.select { |record| record["venue"].nil? }
+                                .map { |record| record["title"] }
+
+    PAGES.each do |relative_path|
+      html = page(relative_path)
+      list_items = html.scan(/<li>.*?<\/li>/m)
+
+      venue_less_titles.each do |title|
+        item = list_items.find { |candidate| candidate.include?(title) }
+        refute_nil item, title
+        refute_includes item, "publication-venue", title
+        refute_match(/<strong(?:\s+[^>]*)?>\s*<\/strong>/m, item, title)
+      end
+    end
+  end
 end

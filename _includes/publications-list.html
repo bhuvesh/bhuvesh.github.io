@@ -5,13 +5,16 @@
   <li>
     <p>
       {{ publication.title }}<br>
-      {{ publication.authors }}<br>
-      <strong>{{ publication.venue }}</strong>
-      {% if publication.note %}
-        {% if publication.highlight %}
-          <span style="color: red"><strong>[{{ publication.note }}]</strong></span>
-        {% else %}
-          ({{ publication.note }})
+      <span class="publication-authors">{{ publication.authors }}</span>
+      {% if publication.venue or publication.note %}
+        <br>
+        {% if publication.venue %}<strong class="publication-venue">{{ publication.venue }}</strong>{% endif %}
+        {% if publication.note %}
+          {% if publication.highlight %}
+            <span style="color: red"><strong>[{{ publication.note }}]</strong></span>
+          {% else %}
+            ({{ publication.note }})
+          {% endif %}
         {% endif %}
       {% endif %}
       {% if publication.links and publication.links.size > 0 %}
@@ -31,8 +34,11 @@
   <li>
     <p>
       {{ publication.title }}<br>
-      {{ publication.authors }}<br>
-      <strong>{{ publication.venue }}</strong>{% if publication.note %} ({{ publication.note }}){% endif %}
+      <span class="publication-authors">{{ publication.authors }}</span>
+      {% if publication.venue or publication.note %}
+        <br>
+        {% if publication.venue %}<strong class="publication-venue">{{ publication.venue }}</strong>{% endif %}{% if publication.note %} ({{ publication.note }}){% endif %}
+      {% endif %}
       {% if publication.links and publication.links.size > 0 %}
         <br>
         {% for link in publication.links %}<a href="{{ link.url }}">[{{ link.label }}]</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
