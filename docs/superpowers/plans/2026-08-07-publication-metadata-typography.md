@@ -158,6 +158,7 @@ def test_venue_less_preprints_do_not_render_empty_venue_markup
       item = list_items.find { |candidate| candidate.include?(title) }
       refute_nil item, title
       refute_includes item, "publication-venue", title
+      refute_match(/<strong(?:\s+[^>]*)?>\s*<\/strong>/m, item, title)
     end
   end
 end
