@@ -30,6 +30,7 @@ Each record will support:
 - `authors`: required display-ready author string.
 - `venue`: required venue and year or current status.
 - `note`: optional award, spotlight, or acceptance note.
+- `highlight`: optional boolean that preserves the current red emphasis for an award note.
 - `links`: optional ordered list of `{ label, url }` objects.
 
 The data deliberately stores a display-ready author string rather than splitting authors into objects. This matches the current site, keeps updates simple, and avoids adding unused author-profile functionality.
@@ -143,4 +144,6 @@ Verification will also:
 
 ## Deployment Boundary
 
-Implementation and verification will happen locally first. Publishing requires a separate reviewed commit and push to `origin/master`, which triggers the existing GitHub Pages deployment. The live site will be checked only after that push is approved and completes.
+Implementation and verification will happen in the isolated worktree `/Users/bkumar4/work/professional/website/bhuvesh-publications-cleanup` on branch `codex/publications-cleanup`. The branch will be previewed locally before it is pushed. After visual approval, only the feature branch will be pushed and a pull request will target `master`; the pull request will not be merged automatically.
+
+GitHub Pages does not automatically provide a rendered URL for this repository's pull requests, and the implementation will not add a production `/testing` path. The branch will be shown through a local browser preview. A publicly shareable Netlify or Cloudflare preview can be added later as a separate integration if required.
