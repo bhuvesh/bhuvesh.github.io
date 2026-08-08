@@ -15,6 +15,4 @@ Before joining Snap, I was a Machine Learning Scientist at <a href="https://www.
 
 For more details, please see my <a href="/cv/">CV</a>.
 
-{% capture publications %}{% include publications-list.md %}{% endcapture %}
-{{ publications | markdownify }}
-
+{% include publications-list.html %}
