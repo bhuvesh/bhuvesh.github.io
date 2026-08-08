@@ -1,10 +1,9 @@
 publications:
   - title: "Semantic IDs for Recommender Systems at Snapchat: Use Cases, Technical Challenges, and Design Choices"
     authors: >-
-      Clark Mingxuan Ju, Tong Zhao, Leonardo Neves, Liam Collins, Bhuvesh Kumar,
-      Jiwen Ren, Lili Zhang, Wenfeng Zhuo, Vincent Zhang, Xiao Bai, Jinchao Li,
-      Karthik Iyer, Zihao Fan, Yilun Xu, Yiwen Chen, Peicheng Yu, Manish Malik,
-      Neil Shah
+      C. M. Ju, T. Zhao, L. Neves, L. Collins, B. Kumar, J. Ren, L. Zhang,
+      W. Zhuo, V. Zhang, X. Bai, J. Li, K. Iyer, Z. Fan, Y. Xu, Y. Chen,
+      P. Yu, M. Malik, N. Shah
     venue: "SIGIR 2026 Industry Papers Track"
     links:
       - label: "paper"
@@ -13,7 +12,7 @@ publications:
         url: "https://arxiv.org/abs/2604.03949"
 
   - title: "Exploiting ID-Text Complementarity via Ensembling for Sequential Recommendation"
-    authors: "Liam Collins, Bhuvesh Kumar, Clark Mingxuan Ju, Tong Zhao, Donald Loveland, Leonardo Neves, Neil Shah"
+    authors: "L. Collins, B. Kumar, C. M. Ju, T. Zhao, D. Loveland, L. Neves, N. Shah"
     venue: "RecSys 2026"
     note: "Accepted"
     links:
@@ -21,7 +20,7 @@ publications:
         url: "https://arxiv.org/abs/2512.17820"
 
   - title: "CoSearch: Joint Training of Reasoning and Document Ranking via Reinforcement Learning for Agentic Search"
-    authors: "Hansi Zeng, Liam Collins, Bhuvesh Kumar, Neil Shah, Hamed Zamani"
+    authors: "H. Zeng, L. Collins, B. Kumar, N. Shah, H. Zamani"
     venue: "COLM 2026"
     note: "Accepted"
     links:
@@ -29,7 +28,7 @@ publications:
         url: "https://arxiv.org/abs/2604.17555"
 
   - title: "Training-Free LLM-Based Recommendation with Post-LLM Item Refinement Using Collaborative Signals"
-    authors: "Kyungho Kim, Sunwoo Kim, Geon Lee, Shinhwan Kang, Sojeong Kim, Liam Collins, Bhuvesh Kumar, Donald Loveland, Kijung Shin"
+    authors: "K. Kim, S. Kim, G. Lee, S. Kang, S. Kim, L. Collins, B. Kumar, D. Loveland, K. Shin"
     venue: "CIKM'26 Short Paper"
 
   - title: "Sequential Data Augmentation for Generative Recommendation"
@@ -120,10 +119,9 @@ publications:
 preprints:
   - title: "LLM-Based Generative Retrieval for Snapchat Content Recommendation"
     authors: >-
-      Liam Collins, Jiwen Ren, Donald Loveland, Bhuvesh Kumar, Clark Mingxuan Ju,
-      Xuan Guo, Mo Li, Alvin Hou, Yi Cui, Peng Yang, Jian Wang, Saud Afzal Shafi,
-      Nga Than, Ruiming Lu, Wenfeng Zhuo, Dongheng Li, Lili Zhang, Mingtao Zhang,
-      Jinchao Ye, Vincent Xue, Chunhui Zhu, Neil Shah
+      L. Collins, J. Ren, D. Loveland, B. Kumar, C. M. Ju, X. Guo, M. Li,
+      A. Hou, Y. Cui, P. Yang, J. Wang, S. A. Shafi, N. Than, R. Lu, W. Zhuo,
+      D. Li, L. Zhang, M. Zhang, J. Ye, V. Xue, C. Zhu, N. Shah
     venue: "KDD submission"
     note: "Preprint posted July 30, 2026"
     links:

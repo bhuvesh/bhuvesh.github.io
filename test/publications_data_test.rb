@@ -8,6 +8,18 @@ class PublicationsDataTest < Minitest::Test
   SECTIONS = %w[publications preprints].freeze
   REQUIRED_FIELDS = %w[title authors venue].freeze
   INCORRECT_TRAINING_FREE_URL = "https://arxiv.org/abs/2410.16458"
+  EXPECTED_NEW_PAPER_AUTHORS = {
+    "Semantic IDs for Recommender Systems at Snapchat: Use Cases, Technical Challenges, and Design Choices" =>
+      "C. M. Ju, T. Zhao, L. Neves, L. Collins, B. Kumar, J. Ren, L. Zhang, W. Zhuo, V. Zhang, X. Bai, J. Li, K. Iyer, Z. Fan, Y. Xu, Y. Chen, P. Yu, M. Malik, N. Shah",
+    "Exploiting ID-Text Complementarity via Ensembling for Sequential Recommendation" =>
+      "L. Collins, B. Kumar, C. M. Ju, T. Zhao, D. Loveland, L. Neves, N. Shah",
+    "CoSearch: Joint Training of Reasoning and Document Ranking via Reinforcement Learning for Agentic Search" =>
+      "H. Zeng, L. Collins, B. Kumar, N. Shah, H. Zamani",
+    "Training-Free LLM-Based Recommendation with Post-LLM Item Refinement Using Collaborative Signals" =>
+      "K. Kim, S. Kim, G. Lee, S. Kang, S. Kim, L. Collins, B. Kumar, D. Loveland, K. Shin",
+    "LLM-Based Generative Retrieval for Snapchat Content Recommendation" =>
+      "L. Collins, J. Ren, D. Loveland, B. Kumar, C. M. Ju, X. Guo, M. Li, A. Hou, Y. Cui, P. Yang, J. Wang, S. A. Shafi, N. Than, R. Lu, W. Zhuo, D. Li, L. Zhang, M. Zhang, J. Ye, V. Xue, C. Zhu, N. Shah"
+  }.freeze
 
   def data
     return {} unless File.file?(DATA_PATH)
@@ -62,6 +74,14 @@ class PublicationsDataTest < Minitest::Test
     urls = records.flat_map { |record| Array(record["links"]) }
                   .map { |link| link["url"] }
     refute_includes urls, INCORRECT_TRAINING_FREE_URL
+  end
+
+  def test_new_papers_use_abbreviated_author_names
+    records_by_title = records.to_h { |record| [record["title"], record] }
+
+    EXPECTED_NEW_PAPER_AUTHORS.each do |title, expected_authors|
+      assert_equal expected_authors, records_by_title.fetch(title).fetch("authors")
+    end
   end
 
   def test_readme_documents_the_publication_workflow
