@@ -63,4 +63,12 @@ class PublicationsDataTest < Minitest::Test
                   .map { |link| link["url"] }
     refute_includes urls, INCORRECT_TRAINING_FREE_URL
   end
+
+  def test_readme_documents_the_publication_workflow
+    readme = File.read(File.join(ROOT, "README.md"))
+    assert_includes readme, "_data/publications.yml"
+    assert_includes readme, "ruby test/publications_data_test.rb"
+    assert_includes readme, "ruby test/repository_cleanup_test.rb"
+    assert_includes readme, "bundle exec jekyll build"
+  end
 end
