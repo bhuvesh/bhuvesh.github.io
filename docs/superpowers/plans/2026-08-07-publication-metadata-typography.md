@@ -141,17 +141,17 @@ Add assertions that inspect the built home and Publications pages:
 def test_authors_have_dedicated_typography_hook
   expected_count = records.length
 
-  REQUIRED_ROUTES.each do |route|
-    html = File.read(File.join(site_dir, route))
-    assert_equal expected_count, html.scan(/class="publication-authors"/).length, route
+  PAGES.each do |relative_path|
+    html = page(relative_path)
+    assert_equal expected_count, html.scan(/class="publication-authors"/).length, relative_path
   end
 end
 
 def test_venue_less_preprints_do_not_render_empty_venue_markup
   venue_less_titles = records.select { |record| record["venue"].nil? }.map { |record| record["title"] }
 
-  REQUIRED_ROUTES.each do |route|
-    html = File.read(File.join(site_dir, route))
+  PAGES.each do |relative_path|
+    html = page(relative_path)
     list_items = html.scan(/<li>.*?<\/li>/m)
 
     venue_less_titles.each do |title|
