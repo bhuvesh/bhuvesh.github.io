@@ -1,0 +1,140 @@
+publications:
+  - title: "Semantic IDs for Recommender Systems at Snapchat: Use Cases, Technical Challenges, and Design Choices"
+    authors: >-
+      Clark Mingxuan Ju, Tong Zhao, Leonardo Neves, Liam Collins, Bhuvesh Kumar,
+      Jiwen Ren, Lili Zhang, Wenfeng Zhuo, Vincent Zhang, Xiao Bai, Jinchao Li,
+      Karthik Iyer, Zihao Fan, Yilun Xu, Yiwen Chen, Peicheng Yu, Manish Malik,
+      Neil Shah
+    venue: "SIGIR 2026 Industry Papers Track"
+    links:
+      - label: "paper"
+        url: "https://dl.acm.org/doi/10.1145/3805712.3808405"
+      - label: "arXiv"
+        url: "https://arxiv.org/abs/2604.03949"
+
+  - title: "Exploiting ID-Text Complementarity via Ensembling for Sequential Recommendation"
+    authors: "Liam Collins, Bhuvesh Kumar, Clark Mingxuan Ju, Tong Zhao, Donald Loveland, Leonardo Neves, Neil Shah"
+    venue: "RecSys 2026"
+    note: "Accepted"
+    links:
+      - label: "arXiv"
+        url: "https://arxiv.org/abs/2512.17820"
+
+  - title: "CoSearch: Joint Training of Reasoning and Document Ranking via Reinforcement Learning for Agentic Search"
+    authors: "Hansi Zeng, Liam Collins, Bhuvesh Kumar, Neil Shah, Hamed Zamani"
+    venue: "COLM 2026"
+    note: "Accepted"
+    links:
+      - label: "arXiv"
+        url: "https://arxiv.org/abs/2604.17555"
+
+  - title: "Training-Free LLM-Based Recommendation with Post-LLM Item Refinement Using Collaborative Signals"
+    authors: "Kyungho Kim, Sunwoo Kim, Geon Lee, Shinhwan Kang, Sojeong Kim, Liam Collins, Bhuvesh Kumar, Donald Loveland, Kijung Shin"
+    venue: "CIKM'26 Short Paper"
+
+  - title: "Sequential Data Augmentation for Generative Recommendation"
+    authors: "G. Lee, B. Kumar, C. M. Ju, T. Zhao, K. Shin, N. Shah, L. Collins"
+    venue: "WSDM 2026"
+    links:
+      - label: "pdf"
+        url: "https://arxiv.org/pdf/2509.13648"
+
+  - title: "Learning Universal User Representations Leveraging Cross-Domain User Intent at Snapchat"
+    authors: "C. M. Ju, L. Neves, B. Kumar, L. Collins, T. Zhao, Y. Qiu, Q. Dou, et al."
+    venue: "SIGIR 2025"
+    links:
+      - label: "pdf"
+        url: "https://arxiv.org/pdf/2504.21838"
+
+  - title: "Generative Recommendation with Semantic IDs: A Practitioner's Handbook"
+    authors: "C. M. Ju, L. Collins, L. Neves, B. Kumar, Y. Y. Wang, T. Zhao, N. Shah"
+    venue: "CIKM 2025"
+    note: "Best Paper Award in Resource Papers"
+    highlight: true
+    links:
+      - label: "pdf"
+        url: "https://arxiv.org/pdf/2507.22224"
+      - label: "Library"
+        url: "https://github.com/snap-research/GRID"
+
+  - title: "Private Mechanism Design via Quantile Estimation"
+    authors: "Y. Yang, T. Xiao, B. Kumar, J. Morgenstern"
+    venue: "ICLR 2025"
+    links:
+      - label: "pdf"
+        url: "https://openreview.net/pdf?id=JQQDePbfxh"
+      - label: "poster"
+        url: "https://iclr.cc/media/PosterPDFs/ICLR%202025/30113.png?t=1744877049.8500702"
+
+  - title: "Revisiting self-attention for cross-domain sequential recommendation"
+    authors: "C. M. Ju, L. Neves, B. Kumar, L. Collins, T. Zhao, Y. Qiu, Q. Dou, S. Nizam, S. Yang, N. Shah"
+    venue: "KDD 2025"
+    links:
+      - label: "pdf"
+        url: "https://arxiv.org/pdf/2505.21811"
+
+  - title: "Accelerated Federated Optimization with Quantization"
+    authors: "Y. Youn, B. Kumar, J. Abernethy"
+    venue: "IEEE Data Engineering Bulletin 2023"
+    links:
+      - label: "pdf"
+        url: "http://sites.computer.org/debull/A23mar/p79.pdf"
+
+  - title: "ActiveHedge: Hedge meets Active Learning"
+    authors: "B. Kumar, J. Abernethy, V. Saligrama"
+    venue: "ICML 2022"
+    note: "Spotlight"
+    links:
+      - label: "pdf"
+        url: "https://proceedings.mlr.press/v162/kumar22a/kumar22a.pdf"
+      - label: "poster"
+        url: "/files/papers/activehedge/activehedge_poster.pdf"
+      - label: "talk"
+        url: "https://icml.cc/virtual/2022/spotlight/16966"
+
+  - title: "Observation Free Attacks on Stochastic Bandits"
+    authors: "Y. Xu, B. Kumar, J. Abernethy"
+    venue: "NeurIPS 2021"
+    links:
+      - label: "pdf"
+        url: "https://proceedings.neurips.cc/paper_files/paper/2021/file/be315e7f05e9f13629031915fe87ad44-Paper.pdf"
+
+  - title: "Bridging Truthfulness and Corruption-robustness in Multi-Armed Bandit Mechanisms"
+    authors: "Y. Xu, B. Kumar, J. Abernethy, T. Lykouris"
+    venue: "Incentives in ML Workshop at ICML 2020"
+    links:
+      - label: "pdf"
+        url: "/files/papers/bridging_truthful/bridging_truthful.pdf"
+      - label: "talk"
+        url: "https://youtu.be/-ynxeiOuqoE"
+
+  - title: "Learning Auctions with Robust Incentive Guarantees"
+    authors: "B. Kumar, J. Abernethy, R. Cummings, J. Morgenstern, S. Taggart"
+    venue: "NeurIPS 2019"
+    links:
+      - label: "pdf"
+        url: "https://proceedings.neurips.cc/paper/2019/file/c14a2a57ead18f3532a5a8949382c536-Paper.pdf"
+      - label: "poster"
+        url: "/files/papers/learning_auctions/learning_auctions_poster.pdf"
+
+preprints:
+  - title: "LLM-Based Generative Retrieval for Snapchat Content Recommendation"
+    authors: >-
+      Liam Collins, Jiwen Ren, Donald Loveland, Bhuvesh Kumar, Clark Mingxuan Ju,
+      Xuan Guo, Mo Li, Alvin Hou, Yi Cui, Peng Yang, Jian Wang, Saud Afzal Shafi,
+      Nga Than, Ruiming Lu, Wenfeng Zhuo, Dongheng Li, Lili Zhang, Mingtao Zhang,
+      Jinchao Ye, Vincent Xue, Chunhui Zhu, Neil Shah
+    venue: "KDD submission"
+    note: "Preprint posted July 30, 2026"
+    links:
+      - label: "arXiv"
+        url: "https://arxiv.org/abs/2607.28895"
+
+  - title: "Optimal spend rate estimation and pacing for ad campaigns with budgets"
+    authors: "B. Kumar, J. Morgenstern, O. Schrijvers"
+    venue: "arXiv (2022)"
+    links:
+      - label: "pdf"
+        url: "https://arxiv.org/pdf/2202.05881"
+      - label: "talk"
+        url: "https://youtu.be/xcPPtnLxDCs"
