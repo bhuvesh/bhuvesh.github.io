@@ -4,7 +4,7 @@ publications:
       C. M. Ju, T. Zhao, L. Neves, L. Collins, B. Kumar, J. Ren, L. Zhang,
       W. Zhuo, V. Zhang, X. Bai, J. Li, K. Iyer, Z. Fan, Y. Xu, Y. Chen,
       P. Yu, M. Malik, N. Shah
-    venue: "SIGIR 2026 Industry Papers Track"
+    venue: "SIGIR 2026"
     links:
       - label: "paper"
         url: "https://dl.acm.org/doi/10.1145/3805712.3808405"
@@ -14,7 +14,6 @@ publications:
   - title: "Exploiting ID-Text Complementarity via Ensembling for Sequential Recommendation"
     authors: "L. Collins, B. Kumar, C. M. Ju, T. Zhao, D. Loveland, L. Neves, N. Shah"
     venue: "RecSys 2026"
-    note: "Accepted"
     links:
       - label: "arXiv"
         url: "https://arxiv.org/abs/2512.17820"
@@ -22,14 +21,13 @@ publications:
   - title: "CoSearch: Joint Training of Reasoning and Document Ranking via Reinforcement Learning for Agentic Search"
     authors: "H. Zeng, L. Collins, B. Kumar, N. Shah, H. Zamani"
     venue: "COLM 2026"
-    note: "Accepted"
     links:
       - label: "arXiv"
         url: "https://arxiv.org/abs/2604.17555"
 
   - title: "Training-Free LLM-Based Recommendation with Post-LLM Item Refinement Using Collaborative Signals"
     authors: "K. Kim, S. Kim, G. Lee, S. Kang, S. Kim, L. Collins, B. Kumar, D. Loveland, K. Shin"
-    venue: "CIKM'26 Short Paper"
+    venue: "CIKM 2026"
 
   - title: "Sequential Data Augmentation for Generative Recommendation"
     authors: "G. Lee, B. Kumar, C. M. Ju, T. Zhao, K. Shin, N. Shah, L. Collins"
@@ -122,15 +120,12 @@ preprints:
       L. Collins, J. Ren, D. Loveland, B. Kumar, C. M. Ju, X. Guo, M. Li,
       A. Hou, Y. Cui, P. Yang, J. Wang, S. A. Shafi, N. Than, R. Lu, W. Zhuo,
       D. Li, L. Zhang, M. Zhang, J. Ye, V. Xue, C. Zhu, N. Shah
-    venue: "KDD submission"
-    note: "Preprint posted July 30, 2026"
     links:
       - label: "arXiv"
         url: "https://arxiv.org/abs/2607.28895"
 
   - title: "Optimal spend rate estimation and pacing for ad campaigns with budgets"
     authors: "B. Kumar, J. Morgenstern, O. Schrijvers"
-    venue: "arXiv (2022)"
     links:
       - label: "pdf"
         url: "https://arxiv.org/pdf/2202.05881"

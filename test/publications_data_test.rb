@@ -6,8 +6,22 @@ class PublicationsDataTest < Minitest::Test
   ROOT = File.expand_path("..", __dir__)
   DATA_PATH = File.join(ROOT, "_data", "publications.yml")
   SECTIONS = %w[publications preprints].freeze
-  REQUIRED_FIELDS = %w[title authors venue].freeze
+  REQUIRED_FIELDS = %w[title authors].freeze
   INCORRECT_TRAINING_FREE_URL = "https://arxiv.org/abs/2410.16458"
+  EXPECTED_REVISED_METADATA = {
+    "Semantic IDs for Recommender Systems at Snapchat: Use Cases, Technical Challenges, and Design Choices" =>
+      { "venue" => "SIGIR 2026", "note" => nil },
+    "Exploiting ID-Text Complementarity via Ensembling for Sequential Recommendation" =>
+      { "venue" => "RecSys 2026", "note" => nil },
+    "CoSearch: Joint Training of Reasoning and Document Ranking via Reinforcement Learning for Agentic Search" =>
+      { "venue" => "COLM 2026", "note" => nil },
+    "Training-Free LLM-Based Recommendation with Post-LLM Item Refinement Using Collaborative Signals" =>
+      { "venue" => "CIKM 2026", "note" => nil },
+    "LLM-Based Generative Retrieval for Snapchat Content Recommendation" =>
+      { "venue" => nil, "note" => nil },
+    "Optimal spend rate estimation and pacing for ad campaigns with budgets" =>
+      { "venue" => nil, "note" => nil }
+  }.freeze
   EXPECTED_NEW_PAPER_AUTHORS = {
     "Semantic IDs for Recommender Systems at Snapchat: Use Cases, Technical Challenges, and Design Choices" =>
       "C. M. Ju, T. Zhao, L. Neves, L. Collins, B. Kumar, J. Ren, L. Zhang, W. Zhuo, V. Zhang, X. Bai, J. Li, K. Iyer, Z. Fan, Y. Xu, Y. Chen, P. Yu, M. Malik, N. Shah",
@@ -81,6 +95,30 @@ class PublicationsDataTest < Minitest::Test
 
     EXPECTED_NEW_PAPER_AUTHORS.each do |title, expected_authors|
       assert_equal expected_authors, records_by_title.fetch(title).fetch("authors")
+    end
+  end
+
+  def test_revised_publication_metadata
+    records_by_title = records.to_h { |record| [record["title"], record] }
+
+    EXPECTED_REVISED_METADATA.each do |title, expected|
+      record = records_by_title.fetch(title)
+      expected.each do |field, expected_value|
+        if expected_value.nil?
+          assert_nil record[field], "#{title}: #{field}"
+        else
+          assert_equal expected_value, record[field], "#{title}: #{field}"
+        end
+      end
+    end
+  end
+
+  def test_present_venues_are_non_empty_text
+    records.each do |record|
+      next unless record.key?("venue")
+
+      assert_kind_of String, record["venue"], record.inspect
+      refute_empty record["venue"].strip, record.inspect
     end
   end
 
