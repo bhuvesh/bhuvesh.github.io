@@ -229,7 +229,39 @@ git commit -m "style: refine publication metadata hierarchy"
 
 ---
 
-### Task 3: Full verification and local preview
+### Task 3: Site-relative stylesheet URLs
+
+**Files:**
+- Modify: `test/rendered_site_test.rb`
+- Modify: `_includes/head.html`
+- Modify: `_includes/head/custom.html`
+
+**Interfaces:**
+- Consumes: the generated main and Academicons stylesheets.
+- Produces: site-relative stylesheet URLs that resolve to local assets in preview and to the same paths on the production domain.
+
+- [ ] **Step 1: Add a failing rendered-output test**
+
+Assert that both stylesheet links use `/assets/css/...` paths and do not use the production hostname.
+
+- [ ] **Step 2: Run the rendered test to verify RED**
+
+Expected: FAIL because the shared head prepends `site.url` through `base_path`.
+
+- [ ] **Step 3: Use Jekyll's `relative_url` filter for stylesheet links**
+
+```liquid
+{{ '/assets/css/main.css' | relative_url }}
+{{ '/assets/css/academicons.css' | relative_url }}
+```
+
+- [ ] **Step 4: Rebuild and run the rendered test to verify GREEN**
+
+Expected: PASS with both local stylesheet paths present.
+
+---
+
+### Task 4: Full verification and local preview
 
 **Files:**
 - Verify only; no source changes expected.

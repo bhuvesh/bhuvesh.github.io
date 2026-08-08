@@ -81,4 +81,13 @@ class RenderedSiteTest < Minitest::Test
       end
     end
   end
+
+  def test_stylesheets_use_site_relative_urls
+    PAGES.each do |relative_path|
+      html = page(relative_path)
+      assert_includes html, 'href="/assets/css/main.css"', relative_path
+      assert_includes html, 'href="/assets/css/academicons.css"', relative_path
+      refute_match(%r{href="https://bhuveshkumar\.com/+assets/css/}, html, relative_path)
+    end
+  end
 end
