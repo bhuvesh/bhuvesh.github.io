@@ -8,6 +8,10 @@ class RenderedSiteTest < Minitest::Test
   DATA = YAML.safe_load_file(File.join(ROOT, "_data", "publications.yml"))
   PAGES = %w[index.html publications/index.html].freeze
   REQUIRED_ROUTES = %w[index.html cv/index.html publications/index.html sitemap/index.html].freeze
+  UNLINKED_RESUME_PDFS = %w[
+    files/resume/2026-08/Bhuvesh_Kumar_Resume.pdf
+    files/resume/2026-08/Bhuvesh_Kumar_CV.pdf
+  ].freeze
   DEMO_TITLES = ["Paper Title Number 1", "Paper Title Number 2", "Paper Title Number 3"].freeze
 
   def normalize(text)
@@ -29,6 +33,22 @@ class RenderedSiteTest < Minitest::Test
   def test_required_routes_are_generated
     REQUIRED_ROUTES.each do |route|
       assert File.file?(File.join(SITE_DIR, route)), "missing #{route}"
+    end
+  end
+
+  def test_dated_resume_pdfs_are_published_without_site_links
+    UNLINKED_RESUME_PDFS.each do |relative_path|
+      published_path = File.join(SITE_DIR, relative_path)
+      assert File.file?(published_path), "missing #{relative_path}"
+      assert_operator File.size(published_path), :>, 10_000, relative_path
+      assert_equal "%PDF-", File.binread(published_path, 5), relative_path
+    end
+
+    rendered_html = Dir.glob(File.join(SITE_DIR, "**", "*.html")).map do |path|
+      File.read(path)
+    end.join("\n")
+    UNLINKED_RESUME_PDFS.each do |relative_path|
+      refute_includes rendered_html, "/#{relative_path}"
     end
   end
 
