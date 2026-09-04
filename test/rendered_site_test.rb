@@ -12,6 +12,11 @@ class RenderedSiteTest < Minitest::Test
     files/resume/2026-08/Bhuvesh_Kumar_Resume.pdf
     files/resume/2026-08/Bhuvesh_Kumar_CV.pdf
   ].freeze
+  CURRENT_DOCUMENTS = %w[
+    files/resume/Bhuvesh_Resume_CV.pdf
+    files/resume/Bhuvesh_Kumar_Resume.pdf
+    files/resume/Bhuvesh_Kumar_Immigration_CV.pdf
+  ].freeze
   DEMO_TITLES = ["Paper Title Number 1", "Paper Title Number 2", "Paper Title Number 3"].freeze
 
   def normalize(text)
@@ -50,6 +55,31 @@ class RenderedSiteTest < Minitest::Test
     UNLINKED_RESUME_PDFS.each do |relative_path|
       refute_includes rendered_html, "/#{relative_path}"
     end
+  end
+
+  def test_current_documents_are_published_with_the_intended_visibility
+    CURRENT_DOCUMENTS.each do |relative_path|
+      published_path = File.join(SITE_DIR, relative_path)
+      assert File.file?(published_path), "missing #{relative_path}"
+      assert_operator File.size(published_path), :>, 10_000, relative_path
+      assert_equal "%PDF-", File.binread(published_path, 5), relative_path
+    end
+
+    cv_html = page("cv/index.html")
+    assert_includes normalize(cv_html), "CV & Resume"
+    assert_includes cv_html, "/files/resume/Bhuvesh_Resume_CV.pdf"
+    assert_includes cv_html, "/files/resume/Bhuvesh_Kumar_Resume.pdf"
+
+    rendered_html = Dir.glob(File.join(SITE_DIR, "**", "*.html")).map do |path|
+      File.read(path)
+    end.join("\n")
+    refute_includes rendered_html, "/files/resume/Bhuvesh_Kumar_Immigration_CV.pdf"
+  end
+
+  def test_promotion_is_visible_on_home_and_cv_pages
+    assert_includes normalize(page("index.html")), "Senior Research Scientist"
+    assert_includes normalize(page("cv/index.html")), "Professional CV"
+    assert_includes normalize(page("cv/index.html")), "Concise resume (2 pages)"
   end
 
   def test_every_publication_is_on_home_and_publications_pages

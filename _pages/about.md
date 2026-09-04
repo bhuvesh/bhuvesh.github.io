@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Research Scientist at <a href="https://research.snap.com/">Snap Research</a> on the <a href="https://research.snap.com/team/user-modeling-and-personalization.html">User Modeling and Personalization (UMaP)</a> team led by <a href="https://nshah.net/">Neil Shah</a>. My work focuses on advancing the state of the art in machine learning for large-scale recommendation systems, and I am currently interested in generative recommendation and representation learning utilizing multimodal user interaction data.
+I am a Senior Research Scientist at <a href="https://research.snap.com/">Snap Research</a> on the <a href="https://research.snap.com/team/user-modeling-and-personalization.html">User Modeling and Personalization (UMaP)</a> team led by <a href="https://nshah.net/">Neil Shah</a>. My work focuses on advancing the state of the art in machine learning for large-scale recommendation systems, and I am currently interested in generative recommendation and representation learning utilizing multimodal user interaction data.
 
 Broadly, I study how learning systems can make effective and responsible decisions in complex environments shaped by human, social, and economic factors.
 
