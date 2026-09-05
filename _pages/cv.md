@@ -9,11 +9,16 @@ redirect_from:
 
 {% include base_path %}
 
-<p style="text-align: center; margin-bottom: 20px;">
-  <a href="/files/resume/Bhuvesh_Resume_CV.pdf" download style="font-size: 16px; padding: 10px 20px; background-color: #0066cc; color: white; text-decoration: none; border-radius: 5px;">Download Professional CV</a><br>
-  <a href="/files/resume/Bhuvesh_Kumar_Resume.pdf" download style="display: inline-block; margin-top: 12px; font-size: 0.9em;">Concise resume (2 pages)</a>
-</p>
+<div class="cv-actions cv-actions--desktop">
+  <a class="cv-actions__button cv-actions__button--primary" href="/files/resume/Bhuvesh_Resume_CV.pdf" download>Download Professional CV</a>
+  <a class="cv-actions__button cv-actions__button--secondary" href="/files/resume/Bhuvesh_Kumar_Resume.pdf" download>Download Concise Résumé · 2 pages</a>
+</div>
 
-<iframe src="/files/resume/Bhuvesh_Resume_CV.pdf" width="100%" height="1000px" style="border: none;">
+<div class="cv-actions cv-actions--mobile">
+  <a class="cv-actions__button cv-actions__button--primary" href="/files/resume/Bhuvesh_Resume_CV.pdf" target="_blank" rel="noopener">Open Professional CV</a>
+  <a class="cv-actions__button cv-actions__button--secondary" href="/files/resume/Bhuvesh_Kumar_Resume.pdf" target="_blank" rel="noopener">Open Concise Résumé · 2 pages</a>
+</div>
+
+<iframe class="cv-preview" src="/files/resume/Bhuvesh_Resume_CV.pdf" title="Professional CV preview" loading="lazy">
   This browser does not support PDFs. Please download the PDF to view it: <a href="/files/resume/Bhuvesh_Resume_CV.pdf">Download Professional CV</a>.
 </iframe>

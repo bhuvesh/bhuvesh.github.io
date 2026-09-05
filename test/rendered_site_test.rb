@@ -79,7 +79,32 @@ class RenderedSiteTest < Minitest::Test
   def test_promotion_is_visible_on_home_and_cv_pages
     assert_includes normalize(page("index.html")), "Senior Research Scientist"
     assert_includes normalize(page("cv/index.html")), "Professional CV"
-    assert_includes normalize(page("cv/index.html")), "Concise resume (2 pages)"
+    assert_includes normalize(page("cv/index.html")), "Concise Résumé · 2 pages"
+  end
+
+  def test_home_omits_the_old_broad_research_interest_sentence
+    refute_includes(
+      normalize(page("index.html")),
+      "Broadly, I study how learning systems can make effective and responsible decisions"
+    )
+  end
+
+  def test_cv_actions_and_preview_have_responsive_rendering_hooks
+    cv_html = page("cv/index.html")
+    main_css = page("assets/css/main.css")
+    assert_includes cv_html, 'class="cv-actions cv-actions--desktop"'
+    assert_includes cv_html, 'class="cv-actions cv-actions--mobile"'
+    assert_includes cv_html, 'class="cv-preview"'
+    assert_includes cv_html, "Download Professional CV"
+    assert_includes cv_html, "Open Professional CV"
+    assert_includes main_css, ".cv-actions--mobile"
+    assert_includes main_css, ".cv-actions--desktop"
+    assert_includes main_css, ".cv-preview"
+    assert_includes main_css, "text-decoration:none !important"
+    assert_match(
+      /@media \(max-width: 37\.5em\)\{\.cv-actions--desktop,\.cv-preview\{display:none\}\.cv-actions--mobile\{display:flex;flex-direction:column;align-items:center\}/,
+      main_css
+    )
   end
 
   def test_every_publication_is_on_home_and_publications_pages

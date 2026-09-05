@@ -25,6 +25,20 @@ class DocumentPublicationTest < Minitest::Test
     refute_includes cv_page, "/#{IMMIGRATION_CV}"
   end
 
+  def test_cv_page_has_distinct_desktop_downloads_and_mobile_open_actions
+    cv_page = source("_pages/cv.md")
+    assert_includes cv_page, 'class="cv-actions cv-actions--desktop"'
+    assert_includes cv_page, 'class="cv-actions cv-actions--mobile"'
+    assert_includes cv_page, "Download Professional CV"
+    assert_includes cv_page, "Download Concise Résumé · 2 pages"
+    assert_includes cv_page, "Open Professional CV"
+    assert_includes cv_page, "Open Concise Résumé · 2 pages"
+    assert_includes cv_page, 'class="cv-preview"'
+    assert_includes cv_page, 'title="Professional CV preview"'
+    assert_match(/cv-actions--desktop[\s\S]*?download>/, cv_page)
+    assert_match(/cv-actions--mobile[\s\S]*?target="_blank" rel="noopener">/, cv_page)
+  end
+
   def test_all_current_documents_are_publishable_pdfs
     [PROFESSIONAL_CV, CONCISE_RESUME, IMMIGRATION_CV].each do |relative_path|
       path = File.join(ROOT, relative_path)
